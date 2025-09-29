@@ -89,7 +89,7 @@ export default function Portfolio() {
           <h5>I'm passionate software engineer who loves building real-world projects, improving daily, and aiming to switch to a better company.</h5>
           <div className="flex gap-8 mt-4">
             <button className="bg-orange-500 px-4 py-2 rounded-md hover:bg-orange-600">Got a project?</button>
-            <a href="/resume.pdf" download>
+            <a href={`${import.meta.env.BASE_URL}resume.pdf`} download>
                <button className="border border-orange-500 px-4 py-2 rounded-md hover:bg-orange-500 hover:text-white">
                 My Resume
               </button>
@@ -163,3 +163,4 @@ export default function Portfolio() {
     </div>
   );
 }
+
